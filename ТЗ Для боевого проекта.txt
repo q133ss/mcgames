@@ -1,0 +1,286 @@
+СПИСОК:
+1️⃣ Создать каркас расширения
+
+manifest.json (MV3)
+
+background.js, content-script.js, popup.html/js
+
+config.js (dev/prod с URL-ами сайта и API)
+
+2️⃣ Получить токен авторизации
+
+в background.js читать cookie jwt_token с домена сайта через chrome.cookies.get
+
+хранить в chrome.storage.local и обновлять при изменениях
+
+3️⃣ Внедрить перехват запросов страницы
+
+в content-script переопределить window.fetch и XMLHttpRequest.open
+
+при каждом запросе .../api/widget/GetEvents парсить ответ, искать нужный marketId и oddId
+
+4️⃣ Отслеживать обновления коэффициентов
+
+перехватывать каждый .../api/widget/GetOddsStates
+
+если для найденного oddId oddStatus === 0 → это фриз
+
+5️⃣ Сформировать ставку
+
+подготовить JSON с нужными полями (culture, integration, stakes, betMarkets[{id, odds[{id,price}]}], …)
+
+добавить заголовок Authorization: Bearer <jwt_token>
+
+6️⃣ Отправить ставку
+
+выполнить POST на https://sb2betgateway-altenar2.biahosted.com/api/widget/placeWidget
+
+дождаться ответа и записать результат в лог
+
+7️⃣ Вести журнал событий
+
+каждое действие (старт, обновление, фриз, ставка, ответ) писать в chrome.storage.local.logs
+
+8️⃣ Отобразить лог в popup
+
+каждые 1–2 сек читать logs и выводить их в интерфейсе расширения
+
+9️⃣ Подключить конфиги сред
+
+в config.js хранить dev/prod URL-ы, переключать окружения одной строкой
+
+10️⃣ Собрать и протестировать
+
+загрузить как «распакованное расширение» в Chrome
+
+проверить: токен читается, обновления и фризы фиксируются, ставка уходит и логируется
+
+
+_________________
+
+
+ОБЩЕЕ ТЗ
+
+1. Общие сведения
+
+Цель:
+Создать расширение Chrome для автоматического мониторинга коэффициентов спортивных событий
+и моментальной отправки ставки при наступлении заданного условия («фриза»).
+
+Платформа:
+Google Chrome (Manifest V3).
+
+Основные сервисы:
+
+Основной сайт (пример): https://mcgames.bet.br
+
+Altenar API:
+
+https://sb2frontend-altenar2.biahosted.com/api/… (данные о событиях, коэффициентах)
+
+https://sb2betgateway-altenar2.biahosted.com/api/widget/placeWidget (приём ставок)
+
+2. Архитектура
+
+Расширение состоит из:
+
+manifest.json – описание прав, хостов, скриптов.
+
+background.js – сервис-воркер:
+
+хранение и обновление JWT-токена,
+
+журнал событий,
+
+приём сообщений от контентного скрипта.
+
+content-script.js – выполняется на целевой странице:
+
+перехват запросов fetch и XMLHttpRequest,
+
+автоматический поиск нужных marketId/oddId,
+
+отправка данных в background.
+
+injected.js – код, который вставляется прямо в контекст страницы для работы с переменными сайта (если нужно).
+
+config.js – конфигурация:
+
+режим (dev/prod),
+
+базовые URL,
+
+параметры ставок (например, размер).
+
+popup/ – интерфейс расширения (HTML/JS/CSS):
+
+отображает логи, статус токена, текущие marketId/oddId.
+
+3. Основной функционал
+3.1 Авторизация
+
+Чтение cookie jwt_token с домена сайта через chrome.cookies.get.
+
+Автоматическая актуализация токена при изменении cookie (событие chrome.cookies.onChanged).
+
+3.2 Мониторинг событий и коэффициентов
+
+Перехват всех запросов к API /api/widget/GetEvents и /api/widget/GetOddsStates:
+
+Автоматический парсинг ответа GetEvents для извлечения:
+
+marketId
+
+oddId
+
+Отслеживание всех обновлений GetOddsStates:
+
+Если oddStatus === 0 (или иной код, соответствующий «фризу») — сигнал на ставку.
+
+3.3 Формирование и отправка ставки
+
+Формирование JSON-пакета для POST-запроса к placeWidget по формату, аналогичному HAR-записи:
+
+{
+  "culture":"pt-BR",
+  "timezoneOffset":180,
+  "integration":"mcgames2",
+  "deviceType":1,
+  ...
+  "betMarkets":[{
+    "id":<marketId>,
+    "odds":[{
+      "id":<oddId>,
+      "price":<price>
+    }]
+  }]
+}
+
+
+Отправка с заголовками:
+
+Authorization: Bearer <jwt_token>
+
+Content-Type: application/json
+
+credentials: include
+
+3.4 Логирование и интерфейс
+
+Ведение истории действий (chrome.storage.local.logs):
+
+старт расширения,
+
+обновление токена,
+
+получение каждого ответа GetOddsStates,
+
+фиксация фриза,
+
+успешная или неуспешная отправка ставки.
+
+Popup-интерфейс:
+
+отображение лога в реальном времени,
+
+статус авторизации,
+
+найденные marketId и oddId.
+
+4. Права и безопасность
+
+permissions:
+"storage", "cookies", "scripting"
+
+host_permissions:
+
+целевой сайт (https://mcgames.bet.br/* или другой),
+
+поддомены Altenar (https://sb2frontend-altenar2.biahosted.com/*, https://sb2betgateway-altenar2.biahosted.com/*).
+
+Доступы только по необходимости, без webRequestBlocking (не совместим с MV3).
+
+5. Алгоритм работы (жизненный цикл)
+
+При установке/запуске сервис-воркер:
+
+Инициализирует лог.
+
+Читает и сохраняет jwt_token.
+
+Контент-скрипт на загруженной странице:
+
+Встраивает injected.js (если нужно доступ к переменным сайта).
+
+Перехватывает все XHR/fetch.
+
+При получении GetEvents находит marketId/oddId и передает в background.
+
+При каждом GetOddsStates передает сигнал об обновлении в background.
+
+Background:
+
+Логирует каждое событие (обновление, фриз).
+
+По сигналу «фриз» отправляет POST-запрос ставки.
+
+Сохраняет ответ от сервера.
+
+6. Конфигурирование и окружения
+
+Файл config.js должен содержать как минимум:
+
+const CONFIG = {
+  environment: "prod", // "dev" для тестов
+  dev: {
+    baseUrl: "http://localhost:8000",
+    betEndpoint: "http://localhost:8000/api/widget/placeWidget"
+  },
+  prod: {
+    baseUrl: "https://mcgames.bet.br",
+    betEndpoint: "https://sb2betgateway-altenar2.biahosted.com/api/widget/placeWidget"
+  },
+  defaultStake: 10 // размер ставки
+};
+
+7. Тестирование
+
+Dev-режим: локальный Laravel-сервер (http://localhost:8000), эмуляция ответов API.
+
+Проверка: автоматический поиск id, логи, отправка тестовой ставки.
+
+Prod-режим: боевой сайт.
+
+Проверка: чтение реального токена, поиск id, реакция на фриз (в реальном времени).
+
+8. Документация
+
+README с описанием установки и конфигурации.
+
+Отдельный раздел для разработчика:
+
+как добавить новые лиги/виды спорта,
+
+как поменять параметры ставки,
+
+как разворачивать dev-окружение.
+
+9. Этапы разработки
+
+Подготовка базового MV3 расширения (manifest, popup, background).
+
+Реализация чтения jwt_token.
+
+Перехват и анализ GetEvents → автоопределение marketId/oddId.
+
+Перехват и анализ GetOddsStates → сигнал о фризе.
+
+POST-запрос ставки.
+
+Журнал событий в popup.
+
+Поддержка dev/prod конфигов.
+
+Тестирование (dev → prod).
+
+Документация.
