@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "MCGames Monitor",
+  "version": "1.5",
+  "description": "Лог событий GetOddsStates через content-script",
+  "permissions": ["storage", "cookies", "scripting"],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "https://mcgames.bet.br/*",
+    "https://sb2frontend-altenar2.biahosted.com/*",
+    "https://sb2betgateway-altenar2.biahosted.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:8000/*",
+        "https://mcgames.bet.br/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js", "config.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
