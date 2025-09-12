@@ -1,0 +1,76 @@
+Коротко и по делу — как «боевой» сценарий выглядит шаг-за-шагом:
+
+Токен
+
+Читаем cookie jwt_token с домена сайта (например, https://mcgames.bet.br) через chrome.cookies.get.
+
+Кладём в chrome.storage.local как auth_data.token и слушаем обновления cookie.
+
+Инициализация на странице
+
+Контент-скрипт вставляет page-скрипт (injected) и конфиг.
+
+В popup пишем стартовый лог: «ждём данные…».
+
+Автопоиск нужного исхода
+
+Перехватываем сетевые запросы страницы (в content-script): XMLHttpRequest.open и window.fetch.
+
+Как только приходит GET …/api/widget/GetEvents?… — парсим ответ: находим событие/рынок (например 1x2) → сохраняем marketId и первый подходящий oddId (или тот, что выбран пользователем в DOM).
+
+Мониторинг обновлений («фризов»)
+
+Ловим каждый GET …/api/Widget/GetOddsStates.
+
+Для нашего oddId читаем oddStatus и price.
+
+Если oddStatus == 0 (разблокирован) — считаем, что «окно»/«фриз» поймано. В лог: «Freeze detected…».
+
+Если нет — лог: «Обновление пришло: фризов не обнаружено».
+
+Сбор тела ставки
+
+Формируем JSON как в HAR:
+culture, timezoneOffset, integration, deviceType, numFormat, countryCode, betType, isAutoCharge, stakes, oddsChangeAction, betMarkets[{ id: marketId, …, odds:[{ id: oddId, marketId, price, … }]}], eachWays, requestId, confirmedByClient, device.
+
+Отправка ставки
+
+Делаем POST https://sb2betgateway-altenar2.biahosted.com/api/widget/placeWidget.
+
+Заголовки: Content-Type: application/json и Authorization: Bearer <jwt_token>.
+
+credentials: "include" — чтобы ушли нужные куки провайдера.
+
+Обработка ответа
+
+Если ок — лог «Bet response: …».
+
+Если ошибка (например errorType: 15) — лог с кодом/сообщением.
+
+Popup-лог
+
+Все шаги пишем в chrome.storage.local.logs.
+
+Popup каждые ~1–2 сек перечитывает логи и показывает прогресс (старты, обновления, фриз/нет, отправка, ответ).
+
+Конфиг сред
+
+В config.js переключаем environment: "prod" и прописываем боевые URL (сайт и бет-шлюз).
+
+В manifest.json в host_permissions добавляем реальный домен сайта и нужные поддомены Altenar.
+
+Надёжность
+
+Если cookie пропала/изменилась — фон заново читает токен и обновляет auth_data.
+
+При падении запросов — пишем в лог и пробуем снова на следующем обновлении.
+
+Безопасность/доступы
+
+Минимально необходимые разрешения: storage, cookies, scripting; хосты — только нужные домены.
+
+Никаких лишних прав и внешних инъекций.
+
+Проверка
+
+Открываем страницу лиги/матча → видим в popup: старт, «JWT updated», «обновление пришло…», при разблокировке — «Freeze detected…» → «Bet response…».

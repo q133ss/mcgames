@@ -1,0 +1,5601 @@
+GET https://sb2frontend-altenar2.biahosted.com/api/widget/GetEvents?culture=pt-BR&timezoneOffset=180&integration=mcgames2&deviceType=1&numFormat=en-GB&countryCode=BR&eventCount=0&sportId=0&champIds=2942
+:
+
+{
+    "dates": [
+        {
+            "dateTime": "2025-09-13T03:00:00Z",
+            "eventIds": [
+                12897240,
+                12897243,
+                12897239
+            ]
+        },
+        {
+            "dateTime": "2025-09-14T03:00:00Z",
+            "eventIds": [
+                12897249,
+                12897244,
+                12897242,
+                12897248,
+                12897245
+            ]
+        },
+        {
+            "dateTime": "2025-09-15T03:00:00Z",
+            "eventIds": [
+                12897246,
+                12897241
+            ]
+        },
+        {
+            "dateTime": "2025-09-19T03:00:00Z",
+            "eventIds": [
+                12897247
+            ]
+        },
+        {
+            "dateTime": "2025-09-20T03:00:00Z",
+            "eventIds": [
+                12897261,
+                12897250,
+                12897260
+            ]
+        },
+        {
+            "dateTime": "2025-09-21T03:00:00Z",
+            "eventIds": [
+                12897251,
+                12897258,
+                12897255,
+                12897254,
+                12897253
+            ]
+        },
+        {
+            "dateTime": "2025-09-22T03:00:00Z",
+            "eventIds": [
+                12897252
+            ]
+        }
+    ],
+    "availableChamps": [],
+    "availableCategories": [],
+    "topSports": [],
+    "headers": [
+        {
+            "typeId": 1,
+            "name": "1x2",
+            "mst": 0,
+            "odds": [
+                {
+                    "id": 1,
+                    "name": "1"
+                },
+                {
+                    "id": 2,
+                    "name": "X"
+                },
+                {
+                    "id": 3,
+                    "name": "2"
+                }
+            ]
+        },
+        {
+            "typeId": 18,
+            "name": "Total",
+            "mst": 0,
+            "odds": [
+                {
+                    "id": 12,
+                    "name": "mais de"
+                },
+                {
+                    "id": 13,
+                    "name": "menos de"
+                }
+            ],
+            "specialOdd": {
+                "typeId": 1,
+                "name": "Gols"
+            }
+        },
+        {
+            "typeId": 29,
+            "name": "Ambas equipes marcam",
+            "mst": 0,
+            "odds": [
+                {
+                    "id": 74,
+                    "name": "sim"
+                },
+                {
+                    "id": 76,
+                    "name": "n\u00E3o"
+                }
+            ]
+        },
+        {
+            "typeId": 10,
+            "name": "Chance dupla",
+            "mst": 0,
+            "odds": [
+                {
+                    "id": 9,
+                    "name": "1X"
+                },
+                {
+                    "id": 10,
+                    "name": "12"
+                },
+                {
+                    "id": 11,
+                    "name": "X2"
+                }
+            ]
+        },
+        {
+            "typeId": 11,
+            "name": "Empate devolve aposta",
+            "mst": 0,
+            "odds": [
+                {
+                    "id": 1,
+                    "name": "1"
+                },
+                {
+                    "id": 3,
+                    "name": "2"
+                }
+            ]
+        },
+        {
+            "typeId": 8,
+            "name": "Gol",
+            "mst": 0,
+            "odds": [
+                {
+                    "id": 1,
+                    "name": "1"
+                },
+                {
+                    "id": 7,
+                    "name": "Nenhum"
+                },
+                {
+                    "id": 3,
+                    "name": "2"
+                }
+            ]
+        }
+    ],
+    "pageCount": 0,
+    "page": 0,
+    "markets": [
+        {
+            "oddIds": [
+                2780516018,
+                2780516019,
+                2780516020
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141449109,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780515963,
+                2780515961,
+                2780515962
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141449098,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780516027,
+                2780516028
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141449112,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780515829,
+                2780515830
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141449057,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780515893,
+                2780515894
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141449089,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780516900,
+                2780516901,
+                2780516902
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141449326,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780516845,
+                2780516843,
+                2780516844
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141449315,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780516909,
+                2780516910
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141449329,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780516711,
+                2780516712
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141449274,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780516775,
+                2780516776
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141449306,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780295285,
+                2780295286,
+                2780295287
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141365458,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780295230,
+                2780295228,
+                2780295229
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141365447,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780295294,
+                2780295295
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141365461,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780295094,
+                2780295095
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141365405,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780295160,
+                2780295161
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141365438,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780524877,
+                2780524878,
+                2780524879
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141451984,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780524822,
+                2780524820,
+                2780524821
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141451973,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780524886,
+                2780524887
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141451987,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780524684,
+                2780524685
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141451930,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780524752,
+                2780524753
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141451964,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780523898,
+                2780523899,
+                2780523900
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141451756,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780523843,
+                2780523841,
+                2780523842
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141451745,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780523907,
+                2780523908
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141451759,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780523705,
+                2780523706
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141451702,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780523773,
+                2780523774
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141451736,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780294401,
+                2780294402,
+                2780294403
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141365240,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780294346,
+                2780294344,
+                2780294345
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141365229,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780294410,
+                2780294411
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141365243,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780294212,
+                2780294213
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141365188,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780294276,
+                2780294277
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141365220,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780534653,
+                2780534655,
+                2780534656
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141455339,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780534579,
+                2780534577,
+                2780534578
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141455328,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780534671,
+                2780534673
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141455342,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780534441,
+                2780534442
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141455279,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780534509,
+                2780534510
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141455319,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780532802,
+                2780532803,
+                2780532804
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141454663,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780532747,
+                2780532745,
+                2780532746
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141454652,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780532811,
+                2780532812
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141454666,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780532609,
+                2780532610
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141454609,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780532677,
+                2780532678
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141454643,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780536485,
+                2780536486,
+                2780536487
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141455562,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780536430,
+                2780536428,
+                2780536429
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141455551,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780536494,
+                2780536495
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141455565,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780536294,
+                2780536295
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141455509,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780536360,
+                2780536361
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141455542,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780533728,
+                2780533729,
+                2780533730
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141454885,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2780533673,
+                2780533671,
+                2780533672
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1141454874,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2780533737,
+                2780533738
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1141454888,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2780533535,
+                2780533536
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1141454831,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780533603,
+                2780533604
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141454865,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825037049,
+                2825037050,
+                2825037051
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157542032,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825036994,
+                2825036992,
+                2825036993
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157542021,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825037058,
+                2825037059
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157542035,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825036860,
+                2825036861
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157541980,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825036924,
+                2825036925
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157542012,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825036086,
+                2825036087,
+                2825036088
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157541667,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825036031,
+                2825036029,
+                2825036030
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157541656,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825036095,
+                2825036096
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157541670,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825035897,
+                2825035898
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157541615,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825035961,
+                2825035962
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157541647,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825038018,
+                2825038019,
+                2825038020
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157542139,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825037963,
+                2825037961,
+                2825037962
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157542111,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825038027,
+                2825038028
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157542143,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825037827,
+                2825037828
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157541917,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825037893,
+                2825037894
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157542098,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825045799,
+                2825045800,
+                2825045801
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157544825,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825045744,
+                2825045742,
+                2825045743
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157544814,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825045808,
+                2825045809
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157544828,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825045606,
+                2825045607
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157544771,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825045674,
+                2825045675
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157544805,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825042870,
+                2825042871,
+                2825042872
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157543915,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825042815,
+                2825042813,
+                2825042814
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157543904,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825042879,
+                2825042880
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157543918,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825042681,
+                2825042682
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157543863,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825042745,
+                2825042746
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157543895,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825041858,
+                2825041859,
+                2825041860
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157543601,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825041803,
+                2825041801,
+                2825041802
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157543590,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825041867,
+                2825041868
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157543604,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825041669,
+                2825041670
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157543549,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825041733,
+                2825041734
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157543581,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825040893,
+                2825040894,
+                2825040895
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157543299,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825040838,
+                2825040836,
+                2825040837
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157543288,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825040902,
+                2825040903
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157543302,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825040704,
+                2825040705
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157543247,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825040768,
+                2825040769
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157543279,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825044828,
+                2825044829,
+                2825044830
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157544217,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825044773,
+                2825044771,
+                2825044772
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157544206,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825044837,
+                2825044838
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157544220,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825044639,
+                2825044640
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157544165,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825044703,
+                2825044704
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157544197,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825039894,
+                2825039895,
+                2825039896
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157542996,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825039839,
+                2825039837,
+                2825039838
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157542985,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825039903,
+                2825039904
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157542999,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825039699,
+                2825039700
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157542941,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825039769,
+                2825039770
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157542976,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2825043837,
+                2825043838,
+                2825043839
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1157544520,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2825043782,
+                2825043780,
+                2825043781
+            ],
+            "mst": 0,
+            "typeId": 10,
+            "isMB": false,
+            "sportMarketId": 70495,
+            "id": 1157544509,
+            "name": "Chance dupla"
+        },
+        {
+            "oddIds": [
+                2825043846,
+                2825043847
+            ],
+            "mst": 0,
+            "typeId": 11,
+            "isMB": false,
+            "sportMarketId": 70500,
+            "id": 1157544523,
+            "name": "Empate devolve aposta"
+        },
+        {
+            "oddIds": [
+                2825043644,
+                2825043645
+            ],
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1157544466,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2825043712,
+                2825043713
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1157544500,
+            "name": "Ambas equipes marcam"
+        }
+    ],
+    "odds": [
+        {
+            "typeId": 1,
+            "price": 2.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780516018,
+            "name": "Cagliari"
+        },
+        {
+            "typeId": 2,
+            "price": 3.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516019,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 3.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780516020,
+            "name": "Parma"
+        },
+        {
+            "typeId": 9,
+            "price": 1.3000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780515963,
+            "name": "Cagliari ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3637,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780515961,
+            "name": "Cagliari ou Parma"
+        },
+        {
+            "typeId": 11,
+            "price": 1.5715,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780515962,
+            "name": "Empate ou Parma"
+        },
+        {
+            "typeId": 1,
+            "price": 1.5715,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516027,
+            "name": "Cagliari"
+        },
+        {
+            "typeId": 3,
+            "price": 2.4000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516028,
+            "name": "Parma"
+        },
+        {
+            "typeId": 12,
+            "price": 2.3000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780515829,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.6250,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780515830,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.9524,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780515893,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.8000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780515894,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 2.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780516900,
+            "name": "Juventus"
+        },
+        {
+            "typeId": 2,
+            "price": 3.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516901,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780516902,
+            "name": "Inter Milan"
+        },
+        {
+            "typeId": 9,
+            "price": 1.4286,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516845,
+            "name": "Juventus ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3637,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516843,
+            "name": "Juventus ou Inter Milan"
+        },
+        {
+            "typeId": 11,
+            "price": 1.4167,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516844,
+            "name": "Empate ou Inter Milan"
+        },
+        {
+            "typeId": 1,
+            "price": 1.9000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516909,
+            "name": "Juventus"
+        },
+        {
+            "typeId": 3,
+            "price": 1.8889,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516910,
+            "name": "Inter Milan"
+        },
+        {
+            "typeId": 12,
+            "price": 2.2000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780516711,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.6800,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780516712,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.8696,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516775,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.9524,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516776,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 3.4000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780295285,
+            "name": "Fiorentina"
+        },
+        {
+            "typeId": 2,
+            "price": 3.1429,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295286,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780295287,
+            "name": "Napoli"
+        },
+        {
+            "typeId": 9,
+            "price": 1.5834,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295230,
+            "name": "Fiorentina ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295228,
+            "name": "Fiorentina ou Napoli"
+        },
+        {
+            "typeId": 11,
+            "price": 1.3000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295229,
+            "name": "Empate ou Napoli"
+        },
+        {
+            "typeId": 1,
+            "price": 2.4000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295294,
+            "name": "Fiorentina"
+        },
+        {
+            "typeId": 3,
+            "price": 1.5715,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295295,
+            "name": "Napoli"
+        },
+        {
+            "typeId": 12,
+            "price": 2.4546,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780295094,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.5556,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780295095,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.0500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295160,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.7408,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780295161,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 1.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780524877,
+            "name": "AS Roma"
+        },
+        {
+            "typeId": 2,
+            "price": 4.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524878,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 7.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780524879,
+            "name": "Torino FC"
+        },
+        {
+            "typeId": 9,
+            "price": 1.1112,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524822,
+            "name": "AS Roma ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2223,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524820,
+            "name": "AS Roma ou Torino FC"
+        },
+        {
+            "typeId": 11,
+            "price": 2.3750,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524821,
+            "name": "Empate ou Torino FC"
+        },
+        {
+            "typeId": 1,
+            "price": 1.1539,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524886,
+            "name": "AS Roma"
+        },
+        {
+            "typeId": 3,
+            "price": 4.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524887,
+            "name": "Torino FC"
+        },
+        {
+            "typeId": 12,
+            "price": 2.0000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780524684,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.7693,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780524685,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.1500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524752,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.6667,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780524753,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 1.4167,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780523898,
+            "name": "Atalanta"
+        },
+        {
+            "typeId": 2,
+            "price": 4.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523899,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 7.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780523900,
+            "name": "Lecce"
+        },
+        {
+            "typeId": 9,
+            "price": 1.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523843,
+            "name": "Atalanta ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.1819,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523841,
+            "name": "Atalanta ou Lecce"
+        },
+        {
+            "typeId": 11,
+            "price": 2.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523842,
+            "name": "Empate ou Lecce"
+        },
+        {
+            "typeId": 1,
+            "price": 1.1250,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523907,
+            "name": "Atalanta"
+        },
+        {
+            "typeId": 3,
+            "price": 5.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523908,
+            "name": "Lecce"
+        },
+        {
+            "typeId": 12,
+            "price": 1.7693,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780523705,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 2.0000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780523706,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.0500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523773,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.7408,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780523774,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 2.8334,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780294401,
+            "name": "Pisa"
+        },
+        {
+            "typeId": 2,
+            "price": 3.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294402,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780294403,
+            "name": "Udinese"
+        },
+        {
+            "typeId": 9,
+            "price": 1.4445,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294346,
+            "name": "Pisa ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3637,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294344,
+            "name": "Pisa ou Udinese"
+        },
+        {
+            "typeId": 11,
+            "price": 1.4000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294345,
+            "name": "Empate ou Udinese"
+        },
+        {
+            "typeId": 1,
+            "price": 1.9524,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294410,
+            "name": "Pisa"
+        },
+        {
+            "typeId": 3,
+            "price": 1.8696,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294411,
+            "name": "Udinese"
+        },
+        {
+            "typeId": 12,
+            "price": 2.3000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780294212,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.5715,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780294213,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.9524,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294276,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.8000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780294277,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 3.6667,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780534653,
+            "name": "Sassuolo Calcio"
+        },
+        {
+            "typeId": 2,
+            "price": 3.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534655,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780534656,
+            "name": " Lazio"
+        },
+        {
+            "typeId": 9,
+            "price": 1.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534579,
+            "name": "Sassuolo Calcio ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534577,
+            "name": "Sassuolo Calcio ou  Lazio"
+        },
+        {
+            "typeId": 11,
+            "price": 1.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534578,
+            "name": "Empate ou  Lazio"
+        },
+        {
+            "typeId": 1,
+            "price": 2.5500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534671,
+            "name": "Sassuolo Calcio"
+        },
+        {
+            "typeId": 3,
+            "price": 1.4762,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534673,
+            "name": " Lazio"
+        },
+        {
+            "typeId": 12,
+            "price": 1.8696,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780534441,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.9524,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780534442,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534509,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 2.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780534510,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 1.8750,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780532802,
+            "name": "AC Milan"
+        },
+        {
+            "typeId": 2,
+            "price": 3.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532803,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 4.3334,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780532804,
+            "name": "Bologna FC"
+        },
+        {
+            "typeId": 9,
+            "price": 1.2223,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532747,
+            "name": "AC Milan ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532745,
+            "name": "AC Milan ou Bologna FC"
+        },
+        {
+            "typeId": 11,
+            "price": 1.8334,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532746,
+            "name": "Empate ou Bologna FC"
+        },
+        {
+            "typeId": 1,
+            "price": 1.3572,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532811,
+            "name": "AC Milan"
+        },
+        {
+            "typeId": 3,
+            "price": 3.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532812,
+            "name": "Bologna FC"
+        },
+        {
+            "typeId": 12,
+            "price": 1.9524,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780532609,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.8696,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780532610,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.8696,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532677,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.9524,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780532678,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 2.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780536485,
+            "name": "Hellas Verona"
+        },
+        {
+            "typeId": 2,
+            "price": 3.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536486,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 3.1429,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780536487,
+            "name": "US Cremonese"
+        },
+        {
+            "typeId": 9,
+            "price": 1.3500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536430,
+            "name": "Hellas Verona ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3637,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536428,
+            "name": "Hellas Verona ou US Cremonese"
+        },
+        {
+            "typeId": 11,
+            "price": 1.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536429,
+            "name": "Empate ou US Cremonese"
+        },
+        {
+            "typeId": 1,
+            "price": 1.6667,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536494,
+            "name": "Hellas Verona"
+        },
+        {
+            "typeId": 3,
+            "price": 2.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536495,
+            "name": "US Cremonese"
+        },
+        {
+            "typeId": 12,
+            "price": 2.5000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780536294,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.5000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780536295,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536360,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780536361,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 1.6471,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780533728,
+            "name": "Como 1907"
+        },
+        {
+            "typeId": 2,
+            "price": 3.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533729,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 5.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780533730,
+            "name": "Genoa"
+        },
+        {
+            "typeId": 9,
+            "price": 1.1429,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533673,
+            "name": "Como 1907 ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2667,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533671,
+            "name": "Como 1907 ou Genoa"
+        },
+        {
+            "typeId": 11,
+            "price": 2.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533672,
+            "name": "Empate ou Genoa"
+        },
+        {
+            "typeId": 1,
+            "price": 1.2223,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533737,
+            "name": "Como 1907"
+        },
+        {
+            "typeId": 3,
+            "price": 3.9000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533738,
+            "name": "Genoa"
+        },
+        {
+            "typeId": 12,
+            "price": 2.1500,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780533535,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.6667,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2780533536,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.1500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533603,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.6667,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780533604,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 2.8000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825037049,
+            "name": "Lecce"
+        },
+        {
+            "typeId": 2,
+            "price": 2.9000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037050,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825037051,
+            "name": "Cagliari"
+        },
+        {
+            "typeId": 9,
+            "price": 1.4286,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036994,
+            "name": "Lecce ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3637,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036992,
+            "name": "Lecce ou Cagliari"
+        },
+        {
+            "typeId": 11,
+            "price": 1.4167,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036993,
+            "name": "Empate ou Cagliari"
+        },
+        {
+            "typeId": 1,
+            "price": 1.9091,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037058,
+            "name": "Lecce"
+        },
+        {
+            "typeId": 3,
+            "price": 1.9091,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037059,
+            "name": "Cagliari"
+        },
+        {
+            "typeId": 12,
+            "price": 2.5000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825036860,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.5000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825036861,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.0500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036924,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036925,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 1.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825036086,
+            "name": "Bologna FC"
+        },
+        {
+            "typeId": 2,
+            "price": 3.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036087,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 5.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825036088,
+            "name": "Genoa"
+        },
+        {
+            "typeId": 9,
+            "price": 1.1765,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036031,
+            "name": "Bologna FC ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036029,
+            "name": "Bologna FC ou Genoa"
+        },
+        {
+            "typeId": 11,
+            "price": 1.9600,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036030,
+            "name": "Empate ou Genoa"
+        },
+        {
+            "typeId": 1,
+            "price": 1.2667,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036095,
+            "name": "Bologna FC"
+        },
+        {
+            "typeId": 3,
+            "price": 3.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825036096,
+            "name": "Genoa"
+        },
+        {
+            "typeId": 12,
+            "price": 2.3334,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825035897,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.5556,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825035898,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.2500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825035961,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825035962,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 6.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825038018,
+            "name": "Hellas Verona"
+        },
+        {
+            "typeId": 2,
+            "price": 4.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825038019,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 1.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825038020,
+            "name": "Juventus"
+        },
+        {
+            "typeId": 9,
+            "price": 2.3334,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037963,
+            "name": "Hellas Verona ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2308,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037961,
+            "name": "Hellas Verona ou Juventus"
+        },
+        {
+            "typeId": 11,
+            "price": 1.1112,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037962,
+            "name": "Empate ou Juventus"
+        },
+        {
+            "typeId": 1,
+            "price": 4.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825038027,
+            "name": "Hellas Verona"
+        },
+        {
+            "typeId": 3,
+            "price": 1.1667,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825038028,
+            "name": "Juventus"
+        },
+        {
+            "typeId": 12,
+            "price": 2.1250,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825037827,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.6667,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825037828,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.2500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037893,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825037894,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 4.2500,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825045799,
+            "name": "Udinese"
+        },
+        {
+            "typeId": 2,
+            "price": 3.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045800,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 1.8000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825045801,
+            "name": "AC Milan"
+        },
+        {
+            "typeId": 9,
+            "price": 1.8750,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045744,
+            "name": "Udinese ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2728,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045742,
+            "name": "Udinese ou AC Milan"
+        },
+        {
+            "typeId": 11,
+            "price": 1.2223,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045743,
+            "name": "Empate ou AC Milan"
+        },
+        {
+            "typeId": 1,
+            "price": 3.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045808,
+            "name": "Udinese"
+        },
+        {
+            "typeId": 3,
+            "price": 1.3334,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045809,
+            "name": "AC Milan"
+        },
+        {
+            "typeId": 12,
+            "price": 1.8667,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825045606,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.8750,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825045607,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.8000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045674,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.9412,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825045675,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 2.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825042870,
+            "name": " Lazio"
+        },
+        {
+            "typeId": 2,
+            "price": 3.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042871,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825042872,
+            "name": "AS Roma"
+        },
+        {
+            "typeId": 9,
+            "price": 1.4445,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042815,
+            "name": " Lazio ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042813,
+            "name": " Lazio ou AS Roma"
+        },
+        {
+            "typeId": 11,
+            "price": 1.4167,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042814,
+            "name": "Empate ou AS Roma"
+        },
+        {
+            "typeId": 1,
+            "price": 1.9524,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042879,
+            "name": " Lazio"
+        },
+        {
+            "typeId": 3,
+            "price": 1.8696,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042880,
+            "name": "AS Roma"
+        },
+        {
+            "typeId": 12,
+            "price": 2.0500,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825042681,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.7143,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825042682,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.8182,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042745,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.9231,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825042746,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 3.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825041858,
+            "name": "Torino FC"
+        },
+        {
+            "typeId": 2,
+            "price": 3.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041859,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825041860,
+            "name": "Atalanta"
+        },
+        {
+            "typeId": 9,
+            "price": 1.6924,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041803,
+            "name": "Torino FC ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041801,
+            "name": "Torino FC ou Atalanta"
+        },
+        {
+            "typeId": 11,
+            "price": 1.3000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041802,
+            "name": "Empate ou Atalanta"
+        },
+        {
+            "typeId": 1,
+            "price": 2.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041867,
+            "name": "Torino FC"
+        },
+        {
+            "typeId": 3,
+            "price": 1.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041868,
+            "name": "Atalanta"
+        },
+        {
+            "typeId": 12,
+            "price": 2.0500,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825041669,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.7143,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825041670,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.9091,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041733,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.8334,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825041734,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 2.5715,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825040893,
+            "name": "US Cremonese"
+        },
+        {
+            "typeId": 2,
+            "price": 3.2000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040894,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825040895,
+            "name": "Parma"
+        },
+        {
+            "typeId": 9,
+            "price": 1.4167,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040838,
+            "name": "US Cremonese ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3334,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040836,
+            "name": "US Cremonese ou Parma"
+        },
+        {
+            "typeId": 11,
+            "price": 1.4616,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040837,
+            "name": "Empate ou Parma"
+        },
+        {
+            "typeId": 1,
+            "price": 1.8000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040902,
+            "name": "US Cremonese"
+        },
+        {
+            "typeId": 3,
+            "price": 1.9524,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040903,
+            "name": "Parma"
+        },
+        {
+            "typeId": 12,
+            "price": 2.2500,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825040704,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.6000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825040705,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.9600,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040768,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.7858,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825040769,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 2.6667,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825044828,
+            "name": "Fiorentina"
+        },
+        {
+            "typeId": 2,
+            "price": 3.1429,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044829,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 2.6667,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825044830,
+            "name": "Como 1907"
+        },
+        {
+            "typeId": 9,
+            "price": 1.4286,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044773,
+            "name": "Fiorentina ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.3500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044771,
+            "name": "Fiorentina ou Como 1907"
+        },
+        {
+            "typeId": 11,
+            "price": 1.4286,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044772,
+            "name": "Empate ou Como 1907"
+        },
+        {
+            "typeId": 1,
+            "price": 1.9091,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044837,
+            "name": "Fiorentina"
+        },
+        {
+            "typeId": 3,
+            "price": 1.9091,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044838,
+            "name": "Como 1907"
+        },
+        {
+            "typeId": 12,
+            "price": 2.0834,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825044639,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.6924,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825044640,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.8182,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044703,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.9231,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825044704,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 1.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825039894,
+            "name": "Inter Milan"
+        },
+        {
+            "typeId": 2,
+            "price": 5.3334,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039895,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 9.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825039896,
+            "name": "Sassuolo Calcio"
+        },
+        {
+            "typeId": 9,
+            "price": 1.0715,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039839,
+            "name": "Inter Milan ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.1250,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039837,
+            "name": "Inter Milan ou Sassuolo Calcio"
+        },
+        {
+            "typeId": 11,
+            "price": 3.1429,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039838,
+            "name": "Empate ou Sassuolo Calcio"
+        },
+        {
+            "typeId": 1,
+            "price": 1.0715,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039903,
+            "name": "Inter Milan"
+        },
+        {
+            "typeId": 3,
+            "price": 7.5000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039904,
+            "name": "Sassuolo Calcio"
+        },
+        {
+            "typeId": 12,
+            "price": 1.6000,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825039699,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 2.2500,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825039700,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.0500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039769,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.7143,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825039770,
+            "name": "N\u00E3o"
+        },
+        {
+            "typeId": 1,
+            "price": 1.2500,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825043837,
+            "name": "Napoli"
+        },
+        {
+            "typeId": 2,
+            "price": 5.3334,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043838,
+            "name": "Empate"
+        },
+        {
+            "typeId": 3,
+            "price": 12.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2825043839,
+            "name": "Pisa"
+        },
+        {
+            "typeId": 9,
+            "price": 1.0500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043782,
+            "name": "Napoli ou empate"
+        },
+        {
+            "typeId": 10,
+            "price": 1.1429,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043780,
+            "name": "Napoli ou Pisa"
+        },
+        {
+            "typeId": 11,
+            "price": 3.2000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043781,
+            "name": "Empate ou Pisa"
+        },
+        {
+            "typeId": 1,
+            "price": 1.0625,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043846,
+            "name": "Napoli"
+        },
+        {
+            "typeId": 3,
+            "price": 8.0000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043847,
+            "name": "Pisa"
+        },
+        {
+            "typeId": 12,
+            "price": 1.7858,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825043644,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 13,
+            "price": 1.9600,
+            "isMB": true,
+            "oddStatus": 0,
+            "id": 2825043645,
+            "name": "Menos de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 2.4286,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043712,
+            "name": "Sim"
+        },
+        {
+            "typeId": 76,
+            "price": 1.5200,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2825043713,
+            "name": "N\u00E3o"
+        }
+    ],
+    "events": [
+        {
+            "marketIds": [
+                1141449109,
+                1141449098,
+                1141449112,
+                1141449057,
+                1141449089
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 5
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 1211,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317095",
+            "sc": 15707,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43656,
+                43641
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-13T13:00:00Z",
+            "id": 12897240,
+            "name": "Cagliari vs. Parma"
+        },
+        {
+            "marketIds": [
+                1141449326,
+                1141449315,
+                1141449329,
+                1141449274,
+                1141449306
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 5
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 7403,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317096",
+            "sc": 15087,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43644,
+                43650
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-13T16:00:00Z",
+            "id": 12897243,
+            "name": "Juventus vs. Inter Milan"
+        },
+        {
+            "marketIds": [
+                1141365458,
+                1141365447,
+                1141365461,
+                1141365405,
+                1141365438
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 5
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 634,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317097",
+            "sc": 15225,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43646,
+                43643
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-13T18:45:00Z",
+            "id": 12897239,
+            "name": "Fiorentina vs. Napoli"
+        },
+        {
+            "marketIds": [
+                1141451984,
+                1141451973,
+                1141451987,
+                1141451930,
+                1141451964
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 2045,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317098",
+            "sc": 14665,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43651,
+                43654
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-14T10:30:00Z",
+            "id": 12897249,
+            "name": "AS Roma vs. Torino FC"
+        },
+        {
+            "marketIds": [
+                1141451756,
+                1141451745,
+                1141451759,
+                1141451702,
+                1141451736
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 2169,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317100",
+            "sc": 15241,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43649,
+                43647
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-14T13:00:00Z",
+            "id": 12897244,
+            "name": "Atalanta vs. Lecce"
+        },
+        {
+            "marketIds": [
+                1141365240,
+                1141365229,
+                1141365243,
+                1141365188,
+                1141365220
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 74,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317099",
+            "sc": 16729,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                46898,
+                43653
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-14T13:00:00Z",
+            "id": 12897242,
+            "name": "Pisa vs. Udinese"
+        },
+        {
+            "marketIds": [
+                1141455339,
+                1141455328,
+                1141455342,
+                1141455279,
+                1141455319
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 8633,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317101",
+            "sc": 15150,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43659,
+                43652
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-14T16:00:00Z",
+            "id": 12897248,
+            "name": "Sassuolo Calcio vs.  Lazio"
+        },
+        {
+            "marketIds": [
+                1141454663,
+                1141454652,
+                1141454666,
+                1141454609,
+                1141454643
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 242,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317102",
+            "sc": 14186,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43645,
+                43642
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-14T18:45:00Z",
+            "id": 12897245,
+            "name": "AC Milan vs. Bologna FC"
+        },
+        {
+            "marketIds": [
+                1141455562,
+                1141455551,
+                1141455565,
+                1141455509,
+                1141455542
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 47,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317103",
+            "sc": 12919,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43658,
+                46895
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-15T16:30:00Z",
+            "id": 12897246,
+            "name": "Hellas Verona vs. US Cremonese"
+        },
+        {
+            "marketIds": [
+                1141454885,
+                1141454874,
+                1141454888,
+                1141454831,
+                1141454865
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 8724,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317104",
+            "sc": 11400,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                51958,
+                43657
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-15T18:45:00Z",
+            "id": 12897241,
+            "name": "Como 1907 vs. Genoa"
+        },
+        {
+            "marketIds": [
+                1157542032,
+                1157542021,
+                1157542035,
+                1157541980,
+                1157542012
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 257,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328524",
+            "sc": 2367,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43647,
+                43656
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-19T18:45:00Z",
+            "id": 12897247,
+            "name": "Lecce vs. Cagliari"
+        },
+        {
+            "marketIds": [
+                1157541667,
+                1157541656,
+                1157541670,
+                1157541615,
+                1157541647
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 209,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328525",
+            "sc": 2353,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43642,
+                43657
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-20T13:00:00Z",
+            "id": 12897261,
+            "name": "Bologna FC vs. Genoa"
+        },
+        {
+            "marketIds": [
+                1157542139,
+                1157542111,
+                1157542143,
+                1157541917,
+                1157542098
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 1312,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328526",
+            "sc": 2373,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43658,
+                43644
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-20T16:00:00Z",
+            "id": 12897250,
+            "name": "Hellas Verona vs. Juventus"
+        },
+        {
+            "marketIds": [
+                1157544825,
+                1157544814,
+                1157544828,
+                1157544771,
+                1157544805
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 64,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328527",
+            "sc": 2416,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43653,
+                43645
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-20T18:45:00Z",
+            "id": 12897260,
+            "name": "Udinese vs. AC Milan"
+        },
+        {
+            "marketIds": [
+                1157543915,
+                1157543904,
+                1157543918,
+                1157543863,
+                1157543895
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 557,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328528",
+            "sc": 2390,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43652,
+                43651
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-21T10:30:00Z",
+            "id": 12897251,
+            "name": " Lazio vs. AS Roma"
+        },
+        {
+            "marketIds": [
+                1157543601,
+                1157543590,
+                1157543604,
+                1157543549,
+                1157543581
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 4003,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328529",
+            "sc": 2391,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43654,
+                43649
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-21T13:00:00Z",
+            "id": 12897258,
+            "name": "Torino FC vs. Atalanta"
+        },
+        {
+            "marketIds": [
+                1157543299,
+                1157543288,
+                1157543302,
+                1157543247,
+                1157543279
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 3926,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328530",
+            "sc": 2390,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                46895,
+                43641
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-21T13:00:00Z",
+            "id": 12897255,
+            "name": "US Cremonese vs. Parma"
+        },
+        {
+            "marketIds": [
+                1157544217,
+                1157544206,
+                1157544220,
+                1157544165,
+                1157544197
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 1879,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328531",
+            "sc": 2390,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43646,
+                51958
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-21T16:00:00Z",
+            "id": 12897254,
+            "name": "Fiorentina vs. Como 1907"
+        },
+        {
+            "marketIds": [
+                1157542996,
+                1157542985,
+                1157542999,
+                1157542941,
+                1157542976
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 2364,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328532",
+            "sc": 2417,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43650,
+                43659
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-21T18:45:00Z",
+            "id": 12897253,
+            "name": "Inter Milan vs. Sassuolo Calcio"
+        },
+        {
+            "marketIds": [
+                1157544520,
+                1157544509,
+                1157544523,
+                1157544466,
+                1157544500
+            ],
+            "isBooked": true,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 1397,
+            "hasStream": false,
+            "extId": "fp32_ar:match:328533",
+            "sc": 2374,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43643,
+                46898
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-22T18:45:00Z",
+            "id": 12897252,
+            "name": "Napoli vs. Pisa"
+        }
+    ],
+    "sports": [
+        {
+            "catIds": [
+                502
+            ],
+            "typeId": 1,
+            "iconName": "soccer",
+            "hasLiveEvents": false,
+            "id": 66,
+            "name": "Futebol"
+        }
+    ],
+    "categories": [
+        {
+            "champIds": [
+                2942
+            ],
+            "iso": "ITA",
+            "hasLiveEvents": false,
+            "id": 502,
+            "name": "It\u00E1lia"
+        }
+    ],
+    "champs": [
+        {
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "hasLiveEvents": false,
+            "id": 2942,
+            "name": "S\u00E9rie A"
+        }
+    ],
+    "competitors": [
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43656,
+            "name": "Cagliari"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43641,
+            "name": "Parma"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43644,
+            "name": "Juventus"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43650,
+            "name": "Inter Milan"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43646,
+            "name": "Fiorentina"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43643,
+            "name": "Napoli"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43651,
+            "name": "AS Roma"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43654,
+            "name": "Torino FC"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43649,
+            "name": "Atalanta"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43647,
+            "name": "Lecce"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 46898,
+            "name": "Pisa"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43653,
+            "name": "Udinese"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43659,
+            "name": "Sassuolo Calcio"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43652,
+            "name": " Lazio"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43645,
+            "name": "AC Milan"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43642,
+            "name": "Bologna FC"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43658,
+            "name": "Hellas Verona"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 46895,
+            "name": "US Cremonese"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 51958,
+            "name": "Como 1907"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43657,
+            "name": "Genoa"
+        }
+    ]
+}
+
+
+2) https://sb2frontend-altenar2.biahosted.com/api/widget/GetPopularBets?culture=pt-BR&timezoneOffset=180&integration=mcgames2&deviceType=1&numFormat=en-GB&countryCode=BR
+
+{
+    "markets": [
+        {
+            "oddIds": [
+                2813696898
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1153455086,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2813691052
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1153453272,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2777039261
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1140143946,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2777040236
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1140144183,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2777042168
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1140144662,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2806518757
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1150854091,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2806548172
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1150855261,
+            "name": "1x2"
+        },
+        {
+            "oddIds": [
+                2806493546
+            ],
+            "variant": 1,
+            "mst": 0,
+            "typeId": 18,
+            "isMB": true,
+            "sportMarketId": 70520,
+            "sv": "2.5",
+            "sn": "2.5",
+            "id": 1150853347,
+            "name": "Total"
+        },
+        {
+            "oddIds": [
+                2780516775
+            ],
+            "mst": 0,
+            "typeId": 29,
+            "isMB": false,
+            "sportMarketId": 70545,
+            "id": 1141449306,
+            "name": "Ambas equipes marcam"
+        },
+        {
+            "oddIds": [
+                2780295287
+            ],
+            "mst": 0,
+            "typeId": 1,
+            "isMB": false,
+            "sportMarketId": 70472,
+            "id": 1141365458,
+            "name": "1x2"
+        }
+    ],
+    "odds": [
+        {
+            "typeId": 74,
+            "price": 2.1000,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2813696898,
+            "name": "Sim"
+        },
+        {
+            "typeId": 1,
+            "price": 1.9412,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2813691052,
+            "name": "Coritiba"
+        },
+        {
+            "typeId": 1,
+            "price": 1.4000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2777039261,
+            "name": "Arsenal FC"
+        },
+        {
+            "typeId": 1,
+            "price": 1.4445,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2777040236,
+            "name": "Newcastle"
+        },
+        {
+            "typeId": 1,
+            "price": 2.4000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2777042168,
+            "name": "Everton"
+        },
+        {
+            "typeId": 3,
+            "price": 1.6000,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2806518757,
+            "name": "Real Madrid"
+        },
+        {
+            "typeId": 1,
+            "price": 1.6154,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2806548172,
+            "name": "Athletic Bilbao"
+        },
+        {
+            "typeId": 12,
+            "price": 1.7500,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2806493546,
+            "name": "Mais de 2.5"
+        },
+        {
+            "typeId": 74,
+            "price": 1.8696,
+            "isMB": false,
+            "oddStatus": 0,
+            "id": 2780516775,
+            "name": "Sim"
+        },
+        {
+            "typeId": 3,
+            "price": 2.2858,
+            "isMB": false,
+            "oddStatus": 0,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                }
+            ],
+            "id": 2780295287,
+            "name": "Napoli"
+        }
+    ],
+    "events": [
+        {
+            "marketIds": [
+                1153455086
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 5236,
+            "hasStream": false,
+            "extId": "fp32_ar:match:323051",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                57809,
+                51709
+            ],
+            "sportId": 66,
+            "catId": 593,
+            "champId": 11005,
+            "status": 0,
+            "startDate": "2025-09-12T22:00:00Z",
+            "id": 12767174,
+            "name": "Volta Redonda FC RJ vs. Crici\u00FAma"
+        },
+        {
+            "marketIds": [
+                1153453272
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 2948,
+            "hasStream": false,
+            "extId": "fp32_ar:match:322656",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                54978,
+                51090
+            ],
+            "sportId": 66,
+            "catId": 593,
+            "champId": 11005,
+            "status": 0,
+            "startDate": "2025-09-13T00:30:00Z",
+            "id": 12767168,
+            "name": "Coritiba vs. Goi\u00E1s"
+        },
+        {
+            "marketIds": [
+                1140143946
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 87,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317036",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43699,
+                43620
+            ],
+            "sportId": 66,
+            "catId": 497,
+            "champId": 2936,
+            "status": 0,
+            "startDate": "2025-09-13T11:30:00Z",
+            "id": 13014789,
+            "name": "Arsenal FC vs. Nottingham Forest"
+        },
+        {
+            "marketIds": [
+                1140144183
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 7718,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317037",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43741,
+                43740
+            ],
+            "sportId": 66,
+            "catId": 497,
+            "champId": 2936,
+            "status": 0,
+            "startDate": "2025-09-13T14:00:00Z",
+            "id": 13014770,
+            "name": "Newcastle vs. Wolverhampton"
+        },
+        {
+            "marketIds": [
+                1140144662
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 7775,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317041",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43692,
+                43690
+            ],
+            "sportId": 66,
+            "catId": 497,
+            "champId": 2936,
+            "status": 0,
+            "startDate": "2025-09-13T14:00:00Z",
+            "id": 13014776,
+            "name": "Everton vs. Aston Villa FC"
+        },
+        {
+            "marketIds": [
+                1150854091
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 481,
+            "hasStream": false,
+            "extId": "fp32_ar:match:324565",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43603,
+                43610
+            ],
+            "sportId": 66,
+            "catId": 501,
+            "champId": 2941,
+            "status": 0,
+            "startDate": "2025-09-13T14:15:00Z",
+            "id": 13160153,
+            "name": "Real Sociedad vs. Real Madrid"
+        },
+        {
+            "marketIds": [
+                1150855261
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 814,
+            "hasStream": false,
+            "extId": "fp32_ar:match:324566",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43602,
+                43601
+            ],
+            "sportId": 66,
+            "catId": 501,
+            "champId": 2941,
+            "status": 0,
+            "startDate": "2025-09-13T16:30:00Z",
+            "id": 13160149,
+            "name": "Athletic Bilbao vs. Deportivo Alav\u00E9s"
+        },
+        {
+            "marketIds": [
+                1150853347
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 966,
+            "hasStream": false,
+            "extId": "fp32_ar:match:324564",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43613,
+                43600
+            ],
+            "sportId": 66,
+            "catId": 501,
+            "champId": 2941,
+            "status": 0,
+            "startDate": "2025-09-13T19:00:00Z",
+            "id": 13160152,
+            "name": "Atletico Madrid vs. Villarreal CF"
+        },
+        {
+            "marketIds": [
+                1141449306
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 7403,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317096",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43644,
+                43650
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-13T16:00:00Z",
+            "id": 12897243,
+            "name": "Juventus vs. Inter Milan"
+        },
+        {
+            "marketIds": [
+                1141365458
+            ],
+            "isBooked": false,
+            "isParlay": false,
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "code": 634,
+            "hasStream": false,
+            "extId": "fp32_ar:match:317097",
+            "sc": 0,
+            "rc": false,
+            "pId": 32,
+            "et": 0,
+            "hasStats": true,
+            "competitorIds": [
+                43646,
+                43643
+            ],
+            "sportId": 66,
+            "catId": 502,
+            "champId": 2942,
+            "status": 0,
+            "startDate": "2025-09-13T18:45:00Z",
+            "id": 12897239,
+            "name": "Fiorentina vs. Napoli"
+        }
+    ],
+    "sports": [
+        {
+            "catIds": [
+                593,
+                497,
+                501,
+                502
+            ],
+            "typeId": 1,
+            "iconName": "soccer",
+            "hasLiveEvents": false,
+            "id": 66,
+            "name": "Futebol"
+        }
+    ],
+    "categories": [
+        {
+            "champIds": [
+                11005
+            ],
+            "iso": "BRA",
+            "hasLiveEvents": false,
+            "id": 593,
+            "name": "Brasil"
+        },
+        {
+            "champIds": [
+                2936
+            ],
+            "iso": "ENG",
+            "hasLiveEvents": false,
+            "id": 497,
+            "name": "Inglaterra"
+        },
+        {
+            "champIds": [
+                2941
+            ],
+            "iso": "ESP",
+            "hasLiveEvents": false,
+            "id": 501,
+            "name": "Espanha"
+        },
+        {
+            "champIds": [
+                2942
+            ],
+            "iso": "ITA",
+            "hasLiveEvents": false,
+            "id": 502,
+            "name": "It\u00E1lia"
+        }
+    ],
+    "champs": [
+        {
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "hasLiveEvents": false,
+            "id": 11005,
+            "name": "Brasileir\u00E3o S\u00E9rie B"
+        },
+        {
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "hasLiveEvents": false,
+            "id": 2936,
+            "name": "Premier League"
+        },
+        {
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "hasLiveEvents": false,
+            "id": 2941,
+            "name": "LaLiga"
+        },
+        {
+            "offers": [
+                {
+                    "type": 0,
+                    "parameter": 2
+                },
+                {
+                    "type": 6
+                }
+            ],
+            "hasLiveEvents": false,
+            "id": 2942,
+            "name": "S\u00E9rie A"
+        }
+    ],
+    "competitors": [
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                11005
+            ],
+            "id": 57809,
+            "name": "Volta Redonda FC RJ"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                11005
+            ],
+            "id": 51709,
+            "name": "Crici\u00FAma"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                11005
+            ],
+            "id": 54978,
+            "name": "Coritiba"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                11005
+            ],
+            "id": 51090,
+            "name": "Goi\u00E1s"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2936
+            ],
+            "id": 43699,
+            "name": "Arsenal FC"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2936
+            ],
+            "id": 43620,
+            "name": "Nottingham Forest"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2936
+            ],
+            "id": 43741,
+            "name": "Newcastle"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2936
+            ],
+            "id": 43740,
+            "name": "Wolverhampton"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2936
+            ],
+            "id": 43692,
+            "name": "Everton"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2936
+            ],
+            "id": 43690,
+            "name": "Aston Villa FC"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2941
+            ],
+            "id": 43603,
+            "name": "Real Sociedad"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2941
+            ],
+            "id": 43610,
+            "name": "Real Madrid"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2941
+            ],
+            "id": 43602,
+            "name": "Athletic Bilbao"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2941
+            ],
+            "id": 43601,
+            "name": "Deportivo Alav\u00E9s"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2941
+            ],
+            "id": 43613,
+            "name": "Atletico Madrid"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2941
+            ],
+            "id": 43600,
+            "name": "Villarreal CF"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43644,
+            "name": "Juventus"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43650,
+            "name": "Inter Milan"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43646,
+            "name": "Fiorentina"
+        },
+        {
+            "jerseySource": 2,
+            "jerseyChamps": [
+                2942
+            ],
+            "id": 43643,
+            "name": "Napoli"
+        }
+    ]
+}
+
+3) Есть кука: jwt_token
+Вот она:
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS1tY2dhbWVzLWJldGJyLmJzMmJldC5jb20vdjIvYXV0aC9sb2dpbiIsImlhdCI6MTc1NzcxMDU4MiwiZXhwIjoxNzU4MzE1MzgyLCJuYmYiOjE3NTc3MTA1ODIsImp0aSI6IjF2bEJWUTdlNk04b0pVYU4iLCJzdWIiOiIyOTMxMTYxNiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJoYSI6IjUiLCJoYiI6IjQyYTAxZWMzNWU1ZDMxMDBlMDJjYTdiMmQxZDgxM2U1IiwiaGMiOiI1NzhmMmI5ODdmNzVlZTVmMDAxNzI2NGU1YWQ4YTE4MSIsImhpIjoiODI4NGM4NjFhMzdmM2ZlMDZkMmJlNzM4YzViODNiYmEiLCJoZCI6ImJiNzdlM2U4OWJlMmI0ZjlhMDYwOTc5ZWJmMWU1NTQ2IiwiaGwiOiI3ZGVjN2ExMjE4MGQ0YzE3ZjEyM2U0YTYxZWY4ZmIxNyIsImhmIjoiMF82MDQyMjI3NWYwNTZmYjA1YzBhMGJhYWI5YmQ5NGQ1ZV8xNzU3NzEwNTgwIn0.WTbwCDL1qKksmom-dlbbERqbN9NGGhwPNe_MVpODjWA
+
+4) Успех placeWindget
+
+POST https://sb2betgateway-altenar2.biahosted.com/api/widget/placeWidget
+
+Payload:
+betMarkets
+: 
+[{id: 13800984, isBanker: false, dbId: 10, sportName: "Futebol", rC: false,…}]
+betType
+: 
+0
+confirmedByClient
+: 
+false
+countryCode
+: 
+"BR"
+culture
+: 
+"pt-BR"
+device
+: 
+0
+deviceType
+: 
+1
+eachWays
+: 
+[false]
+integration
+: 
+"mcgames2"
+isAutoCharge
+: 
+false
+numFormat
+: 
+"en-GB"
+oddsChangeAction
+: 
+2
+requestId
+: 
+"nvwNmMuw0o3P9ufp475kC"
+stakes
+: 
+[1]
+timezoneOffset
+: 
+180
+
+Response:
+
+{
+    "bets": [
+        {
+            "id": 4004257929,
+            "type": 0,
+            "status": 0,
+            "unitStake": 1.0,
+            "totalStake": 1.0,
+            "finalStake": 1.0,
+            "openStake": 1.0,
+            "totalWin": 1.47,
+            "createdDate": "2025-09-02T19:48:12.24Z",
+            "combLength": 1,
+            "linesCount": 1,
+            "currency": "BRL",
+            "selections": [
+                {
+                    "id": 2814248468,
+                    "status": 0,
+                    "price": 1.4706,
+                    "priceType": 1,
+                    "name": "Chasetown FC",
+                    "spec": "",
+                    "marketName": "1x2",
+                    "marketTypeId": 1,
+                    "isLive": true,
+                    "isBetBuilder": false,
+                    "isBanker": false,
+                    "isVirtual": false,
+                    "dbId": 10,
+                    "eventId": 13800984,
+                    "eventName": "Chasetown FC vs. Worcester City",
+                    "eventDate": "2025-09-02T18:45:00Z",
+                    "isLiveOrVirtual": false,
+                    "sportTypeId": 1,
+                    "sportId": 66,
+                    "champId": 17437,
+                    "catId": 497,
+                    "marketId": 1153606648,
+                    "selectionTypeId": 1
+                }
+            ],
+            "remainingTotalWin": 1.47,
+            "cashOutValue": 0.0,
+            "partialCashOut": 0.0,
+            "bonus": 0.00,
+            "bonusPart": 0.0,
+            "initBonusPart": 0.0,
+            "bonusPartPercent": 0.0,
+            "bonusInsurance": 0.0,
+            "isCancelAllowed": false,
+            "totalOdds": 1.4706
+        }
+    ]
+}
+
+
+
+5) Кажется, что кликал на эту кнопку
+
+<button data-focus-visible="false" class="OddBoxVariant0styled__OddBoxButton-sc-1ypym0p-4 etVbTE" style="user-select: none;"><div class="OddBoxVariant0styled__OddBoxContent-sc-1ypym0p-5 lpdrzs"><div class="OddBoxVariant0styled__OddLabelContent-sc-1ypym0p-0 ejAbYs"><span class="OddBoxVariant0styled__OddLabel-sc-1ypym0p-1 eLNfRJ" style="flex-grow: 1;">Cagliari</span></div><div class="OddBoxVariant0styled__OddValue-sc-1ypym0p-6 jrMeHx">2.28</div></div></button>
+
