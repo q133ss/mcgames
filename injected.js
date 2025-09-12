@@ -14,61 +14,67 @@ async function refreshAuth() {
 setInterval(refreshAuth, 3000);
 refreshAuth();
 
-// Перехватываем fetch, чтобы автоматически найти marketId и oddId
-const _fetch = window.fetch;
-window.fetch = async (input, init) => {
-    const url = typeof input === "string" ? input : input.url;
-
-    addLog("fetch url:" + url);
-
-    // 1. Слушаем GetEvents
+function processApiResponse(url, data) {
     if (/\/api\/widget\/GetEvents/i.test(url)) {
-        const resp = await _fetch(input, init);
-        const clone = resp.clone();
-        clone.json().then(data => {
-            if (data.markets && data.odds) {
-                for (const market of data.markets) {
-                    if (market.odds?.length) {
-                        // Сохраняем первый открытый маркет
-                        STATE.targetMarketId = market.id;
-                        STATE.targetOddId = market.odds[0].id;
-                        addLog(`Found marketId=${market.id}, oddId=${market.odds[0].id}`);
-                        chrome.storage.local.set({
-                            auto_ids: { marketId: market.id, oddId: market.odds[0].id }
-                        });
-                        break;
-                    }
+        const markets = data.markets || data?.result?.markets;
+        if (markets) {
+            for (const market of markets) {
+                if (market.odds?.length) {
+                    STATE.targetMarketId = market.id;
+                    STATE.targetOddId = market.odds[0].id;
+                    addLog(`Found marketId=${market.id}, oddId=${market.odds[0].id}`);
+                    chrome.storage.local.set({ auto_ids: { marketId: market.id, oddId: market.odds[0].id } });
+                    break;
                 }
             }
-        }).catch(() => {});
-        return resp;
+        }
+        return;
     }
 
-    // 2. Следим за обновлением коэффициентов и ставим при фризе
     if (/\/api\/widget\/getoddsstates/i.test(url)) {
-        const resp = await _fetch(input, init);
-        const data = await resp.clone().json().catch(() => null);
-
-        if (data?.oddStates) {
+        const oddStates = data.oddStates || data?.result?.oddStates;
+        if (Array.isArray(oddStates)) {
             let found = false;
-            for (const st of data.oddStates) {
-                if (STATE.targetOddId && st.id === STATE.targetOddId && st.oddStatus === 0) {
+            for (const st of oddStates) {
+                const id = st.id ?? st.oddId;
+                const status = st.oddStatus ?? st.status;
+                if (STATE.targetOddId && id === STATE.targetOddId && status === 0) {
                     addLog("Freeze detected for auto target: " + JSON.stringify(st));
                     placeBet();
                     found = true;
                 }
             }
-            if (!found) {
-                addLog("Обновление пришло: фризов не обнаружено");
-            }
+            if (!found) addLog("Обновление пришло: фризов не обнаружено");
         } else {
             addLog("GetOddsStates: пустой ответ");
         }
-
-        return resp;
     }
+}
 
-    return _fetch(input, init);
+const _fetch = window.fetch;
+window.fetch = async (input, init) => {
+    const url = typeof input === "string" ? input : input.url;
+    const resp = await _fetch(input, init);
+    resp.clone().json().then(data => processApiResponse(url, data)).catch(() => {});
+    return resp;
+};
+
+const _open = XMLHttpRequest.prototype.open;
+XMLHttpRequest.prototype.open = function(method, url, ...args) {
+    this._url = url;
+    return _open.call(this, method, url, ...args);
+};
+const _send = XMLHttpRequest.prototype.send;
+XMLHttpRequest.prototype.send = function(body) {
+    this.addEventListener("load", function() {
+        try {
+            const data = JSON.parse(this.responseText);
+            processApiResponse(this._url, data);
+        } catch (e) {
+            // ignore
+        }
+    });
+    return _send.call(this, body);
 };
 
 function buildPlaceBody() {
