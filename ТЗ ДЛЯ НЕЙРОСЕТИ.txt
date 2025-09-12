@@ -1,0 +1,83 @@
+Ты — Senior Chrome MV3 engineer. Сделай ПОЛНЫЙ рабочий проект расширения (Manifest v3) для мониторинга коэффициентов на сайте (движок Altenar) и демонстрационной отправки ставки на локальный бэкенд, с возможностью переключения на прод. Никаких пропусков/заглушек. Отвечай ТОЛЬКО файлами проекта и кратким README.
+
+# Цель
+Расширение:
+1) читает JWT из cookie `jwt_token` домена сайта,
+2) автоматически находит `marketId` и `oddId` из ответов `GetEvents`,
+3) мониторит обновления `GetOddsStates`,
+4) ведёт popup-лог («обновление пришло: фризов не обнаружено» / «Freeze detected…»),
+5) формирует JSON ставки как у `placeWidget`,
+6) шлёт POST на тестовый эндпоинт (локально), причём все адреса и режимы — в конфиге.
+
+# Жёсткие требования (MV3)
+- НЕЛЬЗЯ использовать `webRequestBlocking` и `chrome.webRequest.onCompleted`. Всё через content-script + page-injection.
+- Перехватывать сетевые вызовы на уровне страницы: патч `window.fetch` И `XMLHttpRequest`.
+- Регэкспы для путей — регистронезависимые: `/\/api\/widget\/getevents/i`, `/\/api\/widget\/getoddsstates/i`.
+- Логи хранить в `chrome.storage.local.logs`. Popup показывает живой лог.
+- Минимальные права: `"storage"`, `"cookies"`, `"scripting"`. Хост-доступы только к нужным доменам.
+- Конфиг вынести в `config.js` с переключателем окружения: `environment: "local" | "prod"`.
+
+# Домены и маршруты (по умолчанию)
+- local:
+  - `baseUrl`: `http://localhost:8000`
+  - `betEndpoint`: `http://localhost:8000/api/widget/placeWidget`
+- prod:
+  - `baseUrl`: `https://mcgames.bet.br`
+  - `betEndpoint`: `https://sb2betgateway-altenar2.biahosted.com/api/widget/placeWidget`
+- Также добавить в host_permissions: `https://sb2frontend-altenar2.biahosted.com/*`
+
+# Поведение компонентов
+## background.js
+- При старте: положить стартовый лог: «Сервис-воркер запущен, ожидаем обновлений…».
+- Безопасно читать cookie `jwt_token` (через callback→Promise) с `CONFIG[env].baseUrl`, сохранять в `chrome.storage.local.auth_data.token`, логировать «JWT updated»/«JWT cookie not found».
+- `chrome.cookies.onChanged` — при изменении `jwt_token` пересинхронизировать.
+- Принимать сообщения `chrome.runtime.onMessage` из content-script:
+  - `{type:"events-parsed", marketId, oddId}` → сохранить в `chrome.storage.local.auto_ids`, лог «Found marketId=…, oddId=…».
+  - `{type:"odds-update", states:[…]}` → если найден `auto_ids.oddId`, и для него `oddStatus===0`, лог «Freeze detected: {...}», иначе «Обновление пришло: фризов не обнаружено».
+- Функцию формирования тела ставки и отправки на `CONFIG[env].betEndpoint` держать в injected.js (см. ниже), но background должен уметь логировать входящие сообщения о результате ставки `{type:"bet-response", payload}` → положить в лог.
+
+## content-script.js
+- Вставить в страницу `config.js` и `injected.js` (через `chrome.runtime.getURL`).
+- Мост: слушать `window.postMessage` события от injected.js:
+  - `events-parsed`, `odds-update`, `bet-response` → проксировать в background через `chrome.runtime.sendMessage`.
+- Ничего лишнего не логировать.
+
+## injected.js (выполняется в контексте страницы)
+- Держать локальное состояние: `STATE.auth.token` (читать через `chrome.storage.local.get` с интервалом), `STATE.auto.marketId/oddId`.
+- Патч `window.fetch` И `XMLHttpRequest`:
+  - Если URL матчит `/api/widget/getevents` → клонировать ответ, `json()`, найти первый валидный маркет (например, `1x2` или просто первый с `odds.length>0`), извлечь `marketId` и `oddId`, `window.postMessage({type:"events-parsed", marketId, oddId})`.
+  - Если URL матчит `/api/widget/getoddsstates` → клонировать ответ, `json()`, собрать `states` (массив `oddStates`), `window.postMessage({type:"odds-update", states})`.
+- Логика «заметки прогресса»: если обновление пришло и `oddId` еще не определён — постить `odds-update` с пустым `states` (пусть background пишет «обновление пришло: фризов не обнаружено»).
+- Функции:
+  - `buildPlaceBody(selection)` — собрать JSON ставки (culture, timezoneOffset, integration, deviceType, numFormat, countryCode, betType, isAutoCharge, stakes:[CONFIG.defaultStake], oddsChangeAction, betMarkets[…], eachWays, requestId, confirmedByClient, device). Использовать `STATE.auto.marketId/oddId` и последнюю известную `price` из `odds-update` при наличии.
+  - `placeBet()` — `fetch(CONFIG[env].betEndpoint, {method:"POST", headers:{'Content-Type':'application/json', ...(token? {'Authorization': 'Bearer '+token}:{})}, credentials:'include', body: JSON.stringify(buildPlaceBody())})`. Ответ → `window.postMessage({type:"bet-response", payload: <response JSON>})`.
+- Добавить стартовый `addLog` в storage через `chrome.storage.local` не нужно — лог ведёт background. Но можно посылать «tech» сообщения при ключевых шагах (events-parsed, odds-update, bet-response).
+
+## popup/
+- `popup.html` — простой список логов.
+- `popup.js` — каждые 1–2 сек читает `chrome.storage.local.logs`, также выводит `auth_data.token` (наличие/обрезанный), и `auto_ids` (marketId/oddId).
+
+# Файловая структура и что вывести в ответ
+Выведи ПОЛНЫЕ файлы:
+- `manifest.json`
+- `config.js` (env switch + URLs + defaultStake)
+- `background.js`
+- `content-script.js`
+- `injected.js`
+- `popup/popup.html`
+- `popup/popup.js`
+- `README.md` с пошаговой установкой: загрузка распакованного, где смотреть логи, как переключить `environment`, как убедиться, что перехватывается `GetEvents`/`GetOddsStates`.
+
+# Acceptance-критерии (обязательные)
+- MV3 валидный (расширение устанавливается без ошибок).
+- В popup сразу видно стартовый лог и далее «JWT updated»/«JWT cookie not found».
+- При загрузке целевой страницы: в логах появляется «Found marketId=…, oddId=…» (после первого `GetEvents`).
+- При любом ответе `GetOddsStates` — появляется «Обновление пришло: фризов не обнаружено»; при `oddStatus===0` для найденного `oddId` — «Freeze detected: …».
+- Нажав в `injected.js` (временный тест-вызов) `placeBet()` — в логах появляется «Bet response: …», и запрос уходит на `CONFIG.local.betEndpoint`.
+- Переключение в `config.js` на `prod` не ломает расширение; README описывает, какие домены добавить в host_permissions при реальном деплое.
+
+# Ограничения/этика
+- Код НЕ должен включать явные инструкции обхода защит реального оператора.
+- По умолчанию отправка ставки настроена на локальный эндпоинт; в README объясни, как и при каких условиях переключать на prod.
+
+Выводи ответ строго как последовательность файлов с содержимым (каждый файл в отдельном ```блоке), затем один краткий README. Никаких посторонних комментариев вне файлов.
