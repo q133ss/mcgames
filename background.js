@@ -49,3 +49,9 @@ chrome.runtime.onMessage.addListener((msg) => {
         addLog("Обновление пришло (GetOddsStates): фризов не обнаружено");
     }
 });
+
+// Логируем прямые запросы GetOddsStates
+chrome.webRequest.onCompleted.addListener(
+    () => addLog("GetOddsStates request completed"),
+    { urls: ["https://sb2frontend-altenar2.biahosted.com/api/Widget/GetOddsStates*"] }
+);

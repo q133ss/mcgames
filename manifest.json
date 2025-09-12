@@ -3,7 +3,7 @@
   "name": "MCGames Monitor",
   "version": "1.5",
   "description": "Лог событий GetOddsStates через content-script",
-  "permissions": ["storage", "cookies", "scripting"],
+  "permissions": ["storage", "cookies", "scripting", "webRequest"],
   "host_permissions": [
     "http://localhost:8000/*",
     "https://mcgames.bet.br/*",

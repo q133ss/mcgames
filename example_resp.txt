@@ -1,0 +1,6 @@
+{
+  "oddStates": [
+    { "id": 2780516018, "oddStatus": 0, "price": 2.2858 },
+    { "id": 2780516019, "oddStatus": 1, "price": 3.0 }
+  ]
+}
