@@ -17,13 +17,25 @@ refreshAuth();
 function processApiResponse(url, data) {
     if (/\/api\/widget\/GetEvents/i.test(url)) {
         const markets = data.markets || data?.result?.markets;
-        if (markets) {
+        const odds = data.odds || data?.result?.odds;
+        if (Array.isArray(markets)) {
             for (const market of markets) {
                 if (market.odds?.length) {
                     STATE.targetMarketId = market.id;
                     STATE.targetOddId = market.odds[0].id;
-                    addLog(`Found marketId=${market.id}, oddId=${market.odds[0].id}`);
-                    chrome.storage.local.set({ auto_ids: { marketId: market.id, oddId: market.odds[0].id } });
+                } else if (market.oddIds?.length && Array.isArray(odds)) {
+                    for (const oddId of market.oddIds) {
+                        const odd = odds.find(o => (o.id ?? o.oddId) === oddId);
+                        if (odd) {
+                            STATE.targetMarketId = market.id;
+                            STATE.targetOddId = odd.id ?? odd.oddId;
+                            break;
+                        }
+                    }
+                }
+                if (STATE.targetOddId) {
+                    addLog(`Found marketId=${STATE.targetMarketId}, oddId=${STATE.targetOddId}`);
+                    chrome.storage.local.set({ auto_ids: { marketId: STATE.targetMarketId, oddId: STATE.targetOddId } });
                     break;
                 }
             }
